@@ -30,6 +30,10 @@
             </nav>
         </header>
         <section id="hero-section">
+            <div id="small">
+                <h1>Junior-Dev</h1>
+                <p>Coding tutorials & online courses in Tunisian dialect.</p>
+            </div>
             <div id="main-card">
                 <h1>Junior-Dev</h1>
                 <p>Coding tutorials & online courses in Tunisian dialect.</p>
@@ -155,16 +159,20 @@
         <div class="container">
             
             <form netlify method="post">
+                <h1>Get in Touch with us</h1>    
                 <div id="form-body">
-                    <h1>Get in Touch with us</h1>    
-                    <label>Name</label>
-                    <input type="text" placeholder="Name" name="name" required>
-                    
-                    <label>Last name</label>
-                    <input type="text" placeholder="Last name" name="last name" required>
-                    
-                    <label>Message</label>
-                    <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <div class="nameInput">
+                        <label>Name</label>
+                        <input type="text" placeholder="Name" name="name" required>
+                    </div>
+                    <div class="lastNameInput">
+                        <label>Last name</label>
+                        <input type="text" placeholder="Last name" name="last name" required>
+                    </div>                    
+                    <div class="message">
+                        <label>Message</label>
+                        <textarea name="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
                     
                     <button id="submit">
                         <i class="far fa-paper-plane"></i>

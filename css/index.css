@@ -66,6 +66,10 @@ header img {
   margin-top: 3rem;
 }
 
+#hero-section #small {
+  display: none;
+}
+
 #hero-section #main-card {
   padding: 1rem;
   width: 500px;
@@ -362,5 +366,283 @@ footer #coded-by a:hover {
   background-color: #262626;
   border: none;
   color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  #contact-form img {
+    display: none;
+  }
+  #contact-form form {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: block;
+  }
+  #contact-form #form-body {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 70px 200px 50px;
+        grid-template-rows: 70px 200px 50px;
+    grid-gap: 1rem;
+  }
+  #contact-form .nameInput {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #contact-form .nameInput input {
+    width: 100% !important;
+  }
+  #contact-form .lastNameInput {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #contact-form .lastNameInput input {
+    width: 100% !important;
+  }
+  #contact-form .message {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  #contact-form .message textarea {
+    width: 100%;
+  }
+  #contact-form #submit {
+    width: 100% !important;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+  footer .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  footer #coded-by {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #contact-form img {
+    display: none;
+  }
+  #contact-form form {
+    width: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    display: block;
+  }
+  #contact-form #form-body {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 70px 200px 50px;
+        grid-template-rows: 70px 200px 50px;
+    grid-gap: 1rem;
+  }
+  #contact-form .nameInput {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+  }
+  #contact-form .nameInput input {
+    width: 100% !important;
+  }
+  #contact-form .lastNameInput {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #contact-form .lastNameInput input {
+    width: 100% !important;
+  }
+  #contact-form .message {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  #contact-form .message textarea {
+    width: 100%;
+  }
+  #contact-form #submit {
+    width: 100% !important;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+  footer .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  footer #coded-by {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header #main-nav {
+    width: 100%;
+  }
+  header #main-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #hero-section {
+    height: auto;
+  }
+  #hero-section #main-card {
+    display: none;
+  }
+  #hero-section #small {
+    display: block;
+  }
+  #hero-section #small h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #hero-section #small p {
+    font-size: 1.5rem;
+  }
+  #social-links-container {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  footer #brief, footer #quick-links {
+    display: none;
+  }
+  footer #coded-by {
+    padding-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  header {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header #main-nav {
+    width: 100%;
+  }
+  header #main-nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #hero-section {
+    height: auto;
+  }
+  #hero-section #main-card {
+    display: none;
+  }
+  #hero-section #small {
+    display: block;
+  }
+  #hero-section #small h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  #hero-section #small p {
+    font-size: 1.5rem;
+  }
+  #social-links-container {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  #form-body {
+    display: none;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (1fr)[2] 200px 50px !important;
+        grid-template-rows: repeat(2, 1fr) 200px 50px !important;
+    grid-gap: 1rem;
+  }
+  #form-body .nameInput {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
+  #form-body .lastNameInput {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+  #form-body .message {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    grid-column: 1/-1;
+  }
+  #form-body #submit {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    grid-column: 1/-1;
+  }
+  footer #brief, footer #quick-links {
+    display: none;
+  }
+  footer #coded-by {
+    padding-bottom: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */
