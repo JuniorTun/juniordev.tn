@@ -1,0 +1,48 @@
+#courses{
+    width: 100%;
+    margin-top: 3rem;
+    h1{
+        font-size: 2rem;
+    }
+}
+#courses-grid{
+    margin-top: 3rem;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    .card{
+        height: auto;
+        padding: 1rem;
+        border: 1px solid rgba(38, 38, 38, .4);
+        .card-title{
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            a{
+                text-decoration: none;
+                color: #262626;
+                display: flex;
+                align-items: center;
+                i{
+                    font-size: .7rem;
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}
+.java{
+    box-shadow: 3px 3px 0 #FF9302;
+}
+.javafx{
+    box-shadow: 3px 3px 0 #cf3610;
+}
+.netlify{
+    box-shadow: 3px 3px 0 #01C5B4;
+}
+.css{
+    box-shadow: 3px 3px 0 #33A9DC;
+}
+.c{
+    box-shadow: 3px 3px 0 #00608a;
+}

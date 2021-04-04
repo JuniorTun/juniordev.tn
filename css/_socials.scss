@@ -1,0 +1,32 @@
+#social-links-container{
+    width: 100%;
+    padding: 1rem;
+    background-color: #262626;
+    color: #fff;
+    text-align: center;
+    h4{
+        font-size: 2rem;
+    }
+    ul{
+        width: 200px;
+        padding: 1rem 0;
+        margin: auto;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li{
+            float: left;
+            a{
+                display: inline-block;
+                i{
+                    font-size: 2rem;
+                    color: #fff;
+                    &:hover{
+                        color: #f7f7f7;
+                    }
+                }
+            }
+        }
+    }
+}
