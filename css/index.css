@@ -11,6 +11,7 @@ body {
   height: 100vh;
   font-family: "Roboto Mono", "Helvetica Neue",sans-serif;
   line-height: 1.5;
+  user-select:none;
 }
 
 .container {
@@ -39,7 +40,21 @@ header img {
 #main-nav .active {
   font-weight: 500;
 }
-
+#main-nav .mainnavhover,.active{
+  transition: .5s;
+}
+#main-nav .mainnavhover:hover{
+  transform: scale(1.2);
+}
+#quick-links .mainnavhover{
+  transition: .5s;
+}
+#quick-links .mainnavhover:hover{
+  transform: scale(1.2);
+}
+.active:hover{
+  transform: scale(1.2);
+}
 #main-nav ul {
   list-style-type: none;
 }
@@ -75,8 +90,13 @@ header img {
   width: 500px;
   border: 1px solid rgba(38, 38, 38, 0.4);
   border-radius: .2rem;
-  -webkit-box-shadow: 10px 10px 0 #262626;
-          box-shadow: 10px 10px 0 #262626;
+  -webkit-box-shadow: 20px 20px 10px #262626;
+          box-shadow: 20px 20px 10px #262626;
+          transition: 0.5s;
+}
+#hero-section #main-card:hover{
+  box-shadow: 15px 15px 10px #262626;
+  transition-timing-function: ease-out;
 }
 
 #hero-section #main-card h1 {
@@ -98,27 +118,41 @@ header img {
   border: 1px solid #262626;
   display: -webkit-box;
   display: -ms-flexbox;
+  font-family: cursive;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: .5rem;
 }
-
+#hero-section #main-card #search-box label i{
+  cursor:pointer;
+}
 #hero-section #main-card #search-box label input {
   width: 80%;
+  /* border-radius: 50px; */
   border: none;
   outline: none;
+
 }
 
 #social-links-container {
   width: 100%;
   padding: 1rem;
   background-color: #262626;
-  color: #fff;
+  color: #fff;  
   text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  box-shadow: 2px 4px 1px black;
+  border-left-style: dotted;
+  border-right-style: dotted;
+  border-top-style: ridge;
 }
-
+#social-links-container:hover{
+  background-color: #6a6666;
+}
 #social-links-container h4 {
   font-size: 2rem;
 }
@@ -155,6 +189,9 @@ header img {
 
 #social-links-container ul li a i:hover {
   color: #f7f7f7;
+  transition: ease-in-out;
+  transition-duration: .5s;
+  transform: scale(1.5);
 }
 
 #courses {
@@ -164,6 +201,11 @@ header img {
 
 #courses h1 {
   font-size: 2rem;
+}
+#courses h1 a{
+    text-decoration:none;
+    text-decoration-style: none;
+    color:black;
 }
 
 #courses-grid {
@@ -180,10 +222,11 @@ header img {
   padding: 1rem;
   border: 1px solid rgba(38, 38, 38, 0.4);
 }
-
 #courses-grid .card .card-title {
   font-size: 1rem;
   margin-bottom: 1rem;
+  text-decoration: underline;
+  text-decoration-style: double;
 }
 
 #courses-grid .card .card-title a {
@@ -205,26 +248,46 @@ header img {
 .java {
   -webkit-box-shadow: 3px 3px 0 #FF9302;
           box-shadow: 3px 3px 0 #FF9302;
+         
+}
+.java:hover {
+  -webkit-box-shadow: 4px 4px 2px  #e28a16;
+          box-shadow: 4px 4px 2px #f3900f;
+
 }
 
 .javafx {
   -webkit-box-shadow: 3px 3px 0 #cf3610;
           box-shadow: 3px 3px 0 #cf3610;
 }
+.javafx:hover {
+  -webkit-box-shadow: 4px 4px 0 #f2491f;
+          box-shadow: 4px 4px 0 #f54316;
+}
 
 .netlify {
   -webkit-box-shadow: 3px 3px 0 #01C5B4;
           box-shadow: 3px 3px 0 #01C5B4;
 }
-
+.netlify:hover {
+  -webkit-box-shadow: 4px 4px 0 #10dfce;
+          box-shadow: 4px 4px 0 #0ae4d2;
+}
 .css {
   -webkit-box-shadow: 3px 3px 0 #33A9DC;
           box-shadow: 3px 3px 0 #33A9DC;
+}
+.css:hover{
+  -webkit-box-shadow: 4px 4px 0 #27aee8;
+          box-shadow: 4px 4px 0 #25ade7;
 }
 
 .c {
   -webkit-box-shadow: 3px 3px 0 #00608a;
           box-shadow: 3px 3px 0 #00608a;
+}.c:hover {
+  -webkit-box-shadow: 4px 4px 0 #098ec7;
+          box-shadow: 4px 4px 0 #037fb4;
 }
 
 footer {
@@ -351,13 +414,20 @@ footer #coded-by a:hover {
 #contact-form form #submit {
   background-color: #262626;
   color: #fff;
-  padding: .5rem;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin-top: 1rem;
+  border: none;
+  cursor:pointer;
+  transition: .8s;
+}
+#contact-form form #submit:hover{
+  /* background-color: #979595; */
+  transform: scale(1.04);
 }
 
 #contact-form form #submit input {
