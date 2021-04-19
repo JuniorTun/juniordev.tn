@@ -37,14 +37,12 @@ courses.map(course =>{
     <div class="card ${course.class}">
         <div class="card-title">
             <h3>
-                <a href="${course.youtubeLink}" target="_blank">
-                    ${course.title}
-                    <i class="fas fa-external-link-alt"></i>
-                </a>
+                ${course.title}
             </h3>
         </div>
-        <div class="card-body">
+        <div class="card-content">
             <p>${course.description}</p>
+            <a href="${course.youtubeLink}" target="_blank">Watch</a>
         </div>
     </div>`
 })

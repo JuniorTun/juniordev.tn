@@ -171,35 +171,28 @@ header img {
   display: -ms-grid;
   display: grid;
   grid-gap: 1rem;
-  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
 #courses-grid .card {
-  height: auto;
+  min-height: 140px;
   padding: 1rem;
   border: 1px solid rgba(38, 38, 38, 0.4);
 }
 
 #courses-grid .card .card-title {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
-#courses-grid .card .card-title a {
+#courses-grid .card .card-content a {
+  display: block;
+  margin-top: 1rem;
   text-decoration: none;
-  color: #262626;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#courses-grid .card .card-title a i {
-  font-size: .7rem;
-  margin-left: .5rem;
+  float: right;
+  padding: .5rem 1rem;
+  color: #fff;
 }
 
 .java {
@@ -207,9 +200,17 @@ header img {
           box-shadow: 3px 3px 0 #FF9302;
 }
 
+.java a {
+  background-color: #FF9302;
+}
+
 .javafx {
   -webkit-box-shadow: 3px 3px 0 #cf3610;
           box-shadow: 3px 3px 0 #cf3610;
+}
+
+.javafx a {
+  background-color: #cf3610;
 }
 
 .netlify {
@@ -217,14 +218,26 @@ header img {
           box-shadow: 3px 3px 0 #01C5B4;
 }
 
+.netlify a {
+  background-color: #01C5B4;
+}
+
 .css {
   -webkit-box-shadow: 3px 3px 0 #33A9DC;
           box-shadow: 3px 3px 0 #33A9DC;
 }
 
+.css a {
+  background-color: #33A9DC;
+}
+
 .c {
   -webkit-box-shadow: 3px 3px 0 #00608a;
           box-shadow: 3px 3px 0 #00608a;
+}
+
+.c a {
+  background-color: #00608a;
 }
 
 footer {
