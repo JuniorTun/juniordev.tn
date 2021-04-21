@@ -11,6 +11,7 @@ body {
   height: 100vh;
   font-family: "Roboto Mono", "Helvetica Neue",sans-serif;
   line-height: 1.5;
+  position: relative;
 }
 
 .container {
@@ -19,8 +20,25 @@ body {
   margin: auto;
 }
 
+#top-container {
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  -webkit-box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+.sdown {
+  display: none;
+  translate: 1s ease-in-out;
+}
+
 header {
   width: 100%;
+}
+
+header .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
